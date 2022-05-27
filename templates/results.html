@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <title>Weather in {{ city }}</title>
+</head>
+<body>
+<div class="card" style="width: 18rem;" id="container">
+  <div class="card-body">
+    <h5 class="card-title">{{ city }} is {{ desc }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">There is a temperature of {{ temp }}°C</h6>
+    <p class="card-text">It feels like {{ feels_like }}</p>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+<h2 id="bar">Weather dashbord in Flask</h2>
+
+<form action="{{ url_for('results') }}" method="post" id="form">
+    <div class="mb-3">
+            <label id=title for="city_name">Enter name of the city:</label><br>
+            <input type="text" id="city_name" name="city"><br>
+            <input type="submit" value="Submit" class="btn btn-primary btn-block" id="button">
+</div>
+</form>
+
+</body>
+</html>
