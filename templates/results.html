@@ -7,6 +7,9 @@
     <title>Weather in {{ city }}</title>
 </head>
 <body>
+{% extends 'home.html' %}
+
+{% block content %}
 <div class="card" style="width: 18rem;" id="container">
   <div class="card-body">
     <h5 class="card-title">{{ city }} is {{ desc }}</h5>
@@ -15,5 +18,6 @@
 
   </div>
 </div>
+{% endblock %}
 </body>
 </html>

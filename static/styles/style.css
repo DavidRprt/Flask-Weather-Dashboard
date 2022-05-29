@@ -1,23 +1,29 @@
+body {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
 #container {
+    opacity: 75%;
     width: 400px;
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
+    margin-left: 40%;
+    margin-right: 47.5%;
+    margin-top: 50px;
     width: 400px;
 }
 
-#bar {
-     margin-top: 20px;
-     margin-left: 20px;
-}
 
 #form {
+    opacity: 70%;
     width: 400px;
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 42.5%;
+    margin-right: 47.5%;
     margin-top: 100px;
+    width: 400px;
 }
 
 #button {
@@ -30,4 +36,13 @@
 
 #title {
     margin-bottom: 15px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+
 }
